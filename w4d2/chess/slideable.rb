@@ -4,21 +4,21 @@ module Slideable
     DIAGONAL_DIRS = [[1,1], [-1,-1], [1,-1], [-1,1]]
     
     def moves
-        row, col = @pos
-        possible_moves = []
-        
     end
-
+    
     def horizontal_dirs
     end
-
+    
     def diagonal_dirs
     end
-
+    
     def move_dirs
     end
-
+    
     def grow_unblocked_moves_in_dir(dx, dy)
+       
+        possible_moves = []
+        
     end
 
 end
