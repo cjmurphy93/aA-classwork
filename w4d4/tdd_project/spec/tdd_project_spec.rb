@@ -13,10 +13,11 @@ describe "#my_uniq" do
 end
 
 describe "#two_sum" do
-    it "adds" do
+    it "returns pairs of indices of elements that equal 0 when added" do
     new_arr = [1,1,2,3, -1, 3]
     expect(new_arr.two_sum).to eq([[0, 4], [1, 4]])
     end
+    #think of edge cases
 
     it "puts them in order" do
         new_arr = [1, -2,4,2,3, -1, -3]
