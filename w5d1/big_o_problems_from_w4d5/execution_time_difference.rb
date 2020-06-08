@@ -40,9 +40,12 @@ require 'byebug'
 #     subs.max_by {|sub| sub.sum}.sum
 
 # end
-# #This is pretty bad. I think its like O(2n^3) but I could be wrong.
+# #This is pretty bad. I think its like O(n^3) but I could be wrong.
 
 def largest_contiguous_subsum(list)
+    # [2, 3, -6, 7, -6, 7]
+    #largest[2,5,5,5,5,8]
+    #current_sum[2,5,-3,1,1,8]
     largest = list[0]
     current_sum = 0
     i = 0
@@ -73,3 +76,5 @@ p largest_contiguous_subsum(list) # => 8 (from [7, -6, 7])
 
 list = [-5, -1, -3]
 p largest_contiguous_subsum(list) # => -1 (from [-1])
+
+list=[-5, 1, 2, 3, 4, -5, 9, 9]
