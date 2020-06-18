@@ -11,6 +11,7 @@ class UsersController < ApplicationController
             render json: user.errors.full_messages, status: :unprocessable_entity
         end
     end
+    
     def show
         render json: User.find(params[:id])
     end
