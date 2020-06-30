@@ -1,0 +1,17 @@
+section.sections-section {
+    border-bottom: 1px solid $light-gray;
+}
+
+nav.nav-section {
+    display: flex;
+    justify-content: center;
+}
+
+nav.nav-section a {
+    margin: 10px 5px;
+    
+}
+
+nav.nav-section a:hover {
+    text-decoration: underline;
+}
