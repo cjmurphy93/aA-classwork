@@ -1,0 +1,11 @@
+/* PHASE 4: Footer */
+footer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+} 
+
+.footer-copy {
+    
+}
+
