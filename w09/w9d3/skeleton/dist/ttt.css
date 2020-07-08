@@ -1,0 +1,50 @@
+ul {
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+  width: 303px;
+  height: 303px;
+  background:gray;
+  list-style-type: none;
+}
+
+li {
+    width: 99px;
+    height: 99px;
+    background: pink;
+    border: 1px solid blue;
+}
+
+li:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.o {
+    display: flex;
+    background: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.x::after {
+    content: "X";
+}
+
+.o::after {
+    content: "O";
+}
+
