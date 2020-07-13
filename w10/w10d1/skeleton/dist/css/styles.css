@@ -1,0 +1,123 @@
+
+html {
+  box-sizing: border-box;
+  background: #A9DBB8;
+  text-align: center;
+}
+
+h1 {
+  color: #F0F2EF;
+  font-family: 'helvetica neue';
+  font-size: 60px;
+  font-weight: 200;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome {
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+.clock-holder {
+  color: white;
+  width: 200px;
+  height: 60px; 
+  border: 0.5px inset white;
+  margin: 50px 10px 50px 50px;
+  font-size: 30px;
+}
+
+#clock {
+  padding: 14px;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.drop-down-dog-nav {
+  width: 200px;
+  height: 40px;
+  border: .5px solid white;
+  margin: 50px 0px 50px 0px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: white;
+  color: gray;
+}
+
+.drop-down-dog-nav > h3 {
+  position: relative;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.drop-down-dog-nav > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: white;
+  text-align: left;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;;
+}
+.dog-link {
+  display: none;
+}
+
+.dog-link.enter {
+  display: block;
+  position: relative;
+  /* border: 0.2px solid grey; */
+}
+
+.dog-link > a {
+  padding: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  text-decoration: none;
+
+}
+.dog-link:hover {
+  background-color: grey;
+  
+}
+
+.dog-link:hover a {
+  color: white;
+}
+/* .dog-link > a::after {
+  color: white;
+} */
