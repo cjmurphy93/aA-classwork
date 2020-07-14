@@ -1,0 +1,53 @@
+  @-webkit-keyframes blink { 50% { border-color: #ff0000;}  }
+  
+body {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px; 
+    /* background:  */
+	/* radial-gradient(circle at 25px 9px, black 2px, transparent 2px), 
+	radial-gradient(circle at 49px 28px, black 2px, transparent 2px), 
+	radial-gradient(circle at 38px 1px, black 2px, transparent 2px), 
+	radial-gradient(circle at 20px 4px, black 2px, transparent 2px), 
+	radial-gradient(circle at 80px 4px, black 2px, transparent 2px), 
+	radial-gradient(circle at 50px 10px, black 2px, transparent 2px), 
+	radial-gradient(circle at 60px 16px, black 2px, transparent 2px), 
+	radial-gradient(circle at 70px 16px, black 2px, transparent 2px), 
+	radial-gradient(ellipse at 50px 0, red 33px, lime 33px, lime 38px, transparent 38px) 
+    white;
+    background-size: 100px 50px; */
+
+    background: 
+    url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><foreignObject width=%22100px%22 height=%22100px%22><div xmlns=%22http://www.w3.org/1999/xhtml%22 style=%22color:transparent;text-shadow: 0 0 %23e42100, -2px 2px 0 black;font-size:70px%22>🏄‍♀️</div></foreignObject></svg>"), 
+    white; 
+    background-size: 60px 60px; 
+    /* -webkit-animation: blink .2s step-end infinite alternate; */
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size:100px;
+    color: black;
+}
+
+.date-time {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 50px;
+}
+
+.clock-box {
+    background-color:blue;
+    border: 40px outset yellow;
+    width: 550px;
+    color: white;
+    border-radius: 5px;
+    -webkit-animation: blink .2s step-end infinite alternate; 
+    
+}
+
+.clock, .date {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    margin: 10px
+} 
