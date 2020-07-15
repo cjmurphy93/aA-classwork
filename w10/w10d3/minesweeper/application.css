@@ -1,0 +1,92 @@
+ @-webkit-keyframes blink { 50% { background-color: #00ff22; border-color: red}  }
+
+body {
+    display:flex;
+    justify-content: center;
+    /* -webkit-animation: blink 2s step-end infinite alternate; */
+    background:  
+	radial-gradient(circle at 25px 9px, black 2px, transparent 2px), 
+	radial-gradient(circle at 49px 28px, black 2px, transparent 2px), 
+	radial-gradient(circle at 38px 1px, black 2px, transparent 2px), 
+	radial-gradient(circle at 20px 4px, black 2px, transparent 2px), 
+	radial-gradient(circle at 80px 4px, black 2px, transparent 2px), 
+	radial-gradient(circle at 50px 10px, black 2px, transparent 2px), 
+	radial-gradient(circle at 60px 16px, black 2px, transparent 2px), 
+	radial-gradient(circle at 70px 16px, black 2px, transparent 2px), 
+	radial-gradient(ellipse at 50px 0, red 33px, lime 33px, lime 38px, transparent 38px) 
+    white;
+    background-size: 100px 50px;
+    
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* -webkit-animation: blink .2s step-end infinite alternate; */
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.gameTitle {
+    transform: translateX(-19%);
+}
+
+.row {
+    display: flex;
+}
+
+.tile {
+    background-color: lightgray;
+    border-style: outset;
+    height: 26px;
+    width: 26px;
+    -webkit-animation: blink .2s step-end infinite alternate;
+
+}
+
+.explored {
+    border-style: inset;
+}
+
+.flagged {
+
+}
+
+.bombed {
+
+}
+
+.noshow {
+    display:none;
+}
+
+.lost, .won {
+    height:100px;
+    width: 100px;
+    
+}
+
+
+.modal-screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-form {
+    position: absolute;
+    top: 100px;
+    margin: 0 auto;
+    z-index: 4;
+    background-color: white;
+}
+
+
