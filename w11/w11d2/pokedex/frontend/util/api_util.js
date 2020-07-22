@@ -6,3 +6,4 @@ export const fetchAllPokemon = () => (
 );
 
 // this is a promise, asynch request 
+ 
